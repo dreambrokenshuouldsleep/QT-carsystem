@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../1.bmp</file>
+        <file>../../add.png</file>
+        <file>../../del.png</file>
+        <file>../../map.png</file>
+        <file>../../mic.bmp</file>
+        <file>../../music.png</file>
+        <file>../../vedio.png</file>
+        <file>../../wea.png</file>
+        <file>../../weather.png</file>
+        <file>../../pic/cloudy.png</file>
+        <file>../../pic/dafeng.png</file>
+        <file>../../pic/dawu.png</file>
+        <file>../../pic/daxue.png</file>
+        <file>../../pic/heavyrain.png</file>
+        <file>../../pic/leizhenyu.png</file>
+        <file>../../pic/overcastsky.png</file>
+        <file>../../pic/rainstorm.png</file>
+        <file>../../pic/sun.png</file>
+        <file>../../pic/weather_background.jpg</file>
+        <file>../../pic/xiaoyu.png</file>
+        <file>../../pic/zhenyu.png</file>
+        <file>../../music/next.png</file>
+        <file>../../music/pause.png</file>
+        <file>../../music/play.png</file>
+        <file>../../music/prev.png</file>
+        <file>../../music/volume.png</file>
+        <file>../../main.png</file>
+        <file>../../camera.bmp</file>
+        <file>../../music/fast.png</file>
+        <file>../../music/slow.png</file>
+        <file>../../magnify.png</file>
+        <file>../../reduce.png</file>
+        <file>../../mymap.jpg</file>
+        <file>../../current.png</file>
+        <file>../../back.png</file>
+        <file>../../photo.png</file>
+    </qresource>
+</RCC>

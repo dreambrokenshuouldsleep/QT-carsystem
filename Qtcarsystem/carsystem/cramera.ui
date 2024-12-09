@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cramera</class>
+ <widget class="QMainWindow" name="cramera">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">cramera{border-image: url(:/camera.bmp);}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_home">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>0</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/main.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_video">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>671</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal { 
+border: 1px solid #55ffff; 
+background: white; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::sub-page:horizontal { 
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1, 
+    stop: 0 #55ffff, stop: 1 #55ffff); 
+border: 1px solid #777; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::add-page:horizontal { 
+background: #fff; 
+border: 1px solid #777; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::handle:horizontal { 
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+    stop:0 #eee, stop:1 #ccc); 
+border: 1px solid #777; 
+width: 13px; 
+margin-top: -2px; 
+margin-bottom: -2px; 
+border-radius: 4px; 
+} 
+   
+QSlider::handle:horizontal:hover { 
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+    stop:0 #fff, stop:1 #ddd); 
+border: 1px solid #444; 
+border-radius: 4px; 
+} 
+   
+QSlider::sub-page:horizontal:disabled { 
+background: #bbb; 
+border-color: #999; 
+} 
+   
+QSlider::add-page:horizontal:disabled { 
+background: #eee; 
+border-color: #999; 
+} 
+   
+QSlider::handle:horizontal:disabled { 
+background: #eee; 
+border: 1px solid #aaa; 
+border-radius: 4px; 
+} </string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>370</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>00:00/00:00</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_volume">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>390</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/music/volume.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/add.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="del">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/del.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>70</y>
+      <width>170</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_volume">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>410</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal { 
+border: 1px solid #55ffff; 
+background: white; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::sub-page:horizontal { 
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1, 
+    stop: 0 #55ffff, stop: 1 #55ffff); 
+border: 1px solid #777; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::add-page:horizontal { 
+background: #fff; 
+border: 1px solid #777; 
+height: 10px; 
+border-radius: 4px; 
+} 
+   
+QSlider::handle:horizontal { 
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+    stop:0 #eee, stop:1 #ccc); 
+border: 1px solid #777; 
+width: 13px; 
+margin-top: -2px; 
+margin-bottom: -2px; 
+border-radius: 4px; 
+} 
+   
+QSlider::handle:horizontal:hover { 
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+    stop:0 #fff, stop:1 #ddd); 
+border: 1px solid #444; 
+border-radius: 4px; 
+} 
+   
+QSlider::sub-page:horizontal:disabled { 
+background: #bbb; 
+border-color: #999; 
+} 
+   
+QSlider::add-page:horizontal:disabled { 
+background: #eee; 
+border-color: #999; 
+} 
+   
+QSlider::handle:horizontal:disabled { 
+background: #eee; 
+border: 1px solid #aaa; 
+border-radius: 4px; 
+} </string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>390</y>
+      <width>321</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="_2" stretch="0,0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>1</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButton_slow">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/music/slow.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_prev">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/music/prev.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_pause">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/music/pause.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_next">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/music/next.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_fast">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/music/fast.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
